@@ -1,6 +1,6 @@
-# Automate Tasks With Python.
+## Automate Tasks With Python.
 
-## Projects related to this certification:
+### Projects related:
 
   * Image_Reader
   * Lottery_Score
