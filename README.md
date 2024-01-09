@@ -2,7 +2,7 @@
 
 ### Projects related:
 
-  * Image_Reader
-  * Lottery_Score
-  * Report_Budget
-  * Youtube_Downloader
+  * Image Reader
+  * Lottery Score
+  * Report Budget
+  * Youtube Downloader

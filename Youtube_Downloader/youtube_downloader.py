@@ -5,14 +5,14 @@ print()
 
 def directory_path():
     
-    # This function...
+    # This function determines the download's location.
     directory = (input(r"Type in the directory's path or hit enter to choose the 'Downloads' folder: "))
     downloads = str(Path.home() / "Downloads")
     return directory or downloads
 
 def download_video(directory, link):
     
-    # This function...
+    # This function downloads videos from YouTube.
     youtube_video = YouTube(link, use_oauth=True, allow_oauth_cache=True)
     youtube_video = youtube_video.streams.get_highest_resolution()
     try:
@@ -22,7 +22,7 @@ def download_video(directory, link):
 
 def download_playlist(directory, link):
 
-    # This function...
+    # This function downloads playlists form YouTube.
     playlist = Playlist(link)
     playlist_videos = list(playlist.video_urls)
     for video in playlist_videos:
@@ -31,13 +31,16 @@ def download_playlist(directory, link):
 
 def repeat():
 
-    # This function...
-    option = input('\nPress "y" to continue to download: ').lower()
-    if option == 'y': return download()
+    # This function repeats the operation if asked.
+    while True:
+        option = input('\nPress "y" to continue to download: ').lower()
+        if option != 'y':
+            break  
+        download()
 
 def download():
 
-    # This function...
+    # This function downloads videos or playlists from youtube based on user's input.
     directory = directory_path()
     choice = input('Press 1 to download video or 2 to download playlist: ')
     if choice == '1':
