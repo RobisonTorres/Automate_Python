@@ -1,5 +1,5 @@
 import sys, re
-sys.path.append(r'C:\Users\rcssi\Code\Python\Python\Projects\Automate_Python\Image_Reader')
+sys.path.append(r'C:\Users\rcssi\Code\Automate_Python\Image_Reader')
 import reader_numbers
 
 def get_numbers():
