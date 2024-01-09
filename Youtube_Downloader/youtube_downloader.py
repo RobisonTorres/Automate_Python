@@ -42,10 +42,10 @@ def download():
 
     # This function downloads videos or playlists from youtube based on user's input.
     directory = directory_path()
-    choice = input('Press 1 to download video or 2 to download playlist: ')
-    if choice == '1':
+    option = input('Press 1 to download video or 2 to download playlist: ')
+    if option == '1':
         download_video(directory, link = input("Type in the videos's url: "))
-    elif choice == '2':
+    elif option == '2':
         download_playlist(directory, link = input("Type in the playlist's url: "))
     else:
         print('Wrong option.')
