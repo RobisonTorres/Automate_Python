@@ -34,7 +34,7 @@ To use this repository, follow these steps:
     * To download videos or playlist:
     ```bash
    youtube_downloader.py
-
+    ```
     * To download only the audio:
     ```bash
    python youtube_audio.py
