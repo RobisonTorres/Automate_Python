@@ -27,18 +27,18 @@ To use this repository, follow these steps:
 2. Install the library pytube.
 
    ```bash
-   pip install pytube.
+   pip install pytube
 
 3. Navigate to the directory:
 
    ```bash
-   cd Automate_Python
+   cd Automate_Python/Youtube_Downloader
 
 4. Choose a function:
 
     * To download videos or playlist:
     ```bash
-   youtube_downloader.py
+   python youtube_downloader.py
     ```
     * To download only the audio:
     ```bash

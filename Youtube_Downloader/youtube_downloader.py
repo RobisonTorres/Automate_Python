@@ -33,7 +33,7 @@ def repeat():
 
     # This function repeats the operation if asked.
     while True:
-        option = input('\nPress "y" to continue to download: ').lower()
+        option = input('\nPress "y" to continue downloading: ').lower()
         if option != 'y':
             break  
         download()
