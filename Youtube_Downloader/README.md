@@ -24,12 +24,17 @@ To use this repository, follow these steps:
    ```bash
    git clone https://github.com/RobisonTorres/Automate_Python.git
 
-2. Navigate to the directory:
+2. Install the library pytube.
+
+   ```bash
+   pip install pytube.
+
+3. Navigate to the directory:
 
    ```bash
    cd Automate_Python
 
-3. Choose a function:
+4. Choose a function:
 
     * To download videos or playlist:
     ```bash
@@ -39,6 +44,6 @@ To use this repository, follow these steps:
     ```bash
    python youtube_audio.py
 
-4. Follow the instructions prompted into your screen to download.
+5. Follow the instructions prompted into your screen to download.
 
-5. Note: The first time you run this program the terminal will display a code. Copy and paste this code into your browser to log in to your personal account on Youtube. 
+6. Note: The first time you run this program the terminal will display a code. Copy and paste this code into your browser to log in to your personal account on Youtube. 
