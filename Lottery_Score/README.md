@@ -34,7 +34,7 @@ To use this repository, follow these steps:
    ```bash
    git clone https://github.com/RobisonTorres/Automate_Python.git
 
-2. Install the library requests bs4e.
+2. Install the library requests bs4.
 
    ```bash
    pip install requests bs4
@@ -53,3 +53,7 @@ To use this repository, follow these steps:
     * To make sure the program read the numbers correctly:
     ```bash
    python games_image.py
+
+## Thanks
+
+I want to thank my father to give me the idea to create this project.
