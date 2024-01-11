@@ -1,7 +1,5 @@
 # Image Reader
 
-These Python scripts extract text from image.
-
 ## Intro
 
 These scripts in python extract text and number from image.
@@ -30,6 +28,11 @@ These scripts in python extract text and number from image.
     ```
 
 3. Follow the instruction in this [video](https://www.youtube.com/watch?v=4DrCIVS5U3Y&pp=ygULcHl0ZXNzZXJhY3Q%3D) to correctly install pytesseract module.
+
+4. Navigate to the directory:
+
+   ```bash
+   cd Automate_Python/Image_Reader
 
 ## Usage
 
