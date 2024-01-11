@@ -22,8 +22,8 @@ To address this, I implemented alternative options:
 ## Prerequisites
 
 - Python
-- Required Python packages: `requests`, `bs4`
-- Image_Reader project.
+- Required Python packages: `requests`, `bs4`, `pytesseract` 
+(Follow the instruction in the Image_Reader project to install pytesseract)
 
 ## Usage Instructions
 
@@ -53,5 +53,3 @@ To use this repository, follow these steps:
     * To make sure the program read the numbers correctly:
     ```bash
    python games_image.py
-
-5. Follow the instructions prompted into your screen to download.
