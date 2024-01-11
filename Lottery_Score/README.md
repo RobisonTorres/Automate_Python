@@ -11,7 +11,7 @@ I decided to create a Python script to automate this process. My initial idea wa
 To address this, I implemented alternative options:
 
 * Users can manually input each game as a 15-number array.
-* Users can create games in MS Word, take screenshots (like in the games.png file), and use the script to process those images.
+* Users can create games in MS Word, take screenshots (like in the games.png file), and use the script to take these numbers.
 
 ## Features 
 
