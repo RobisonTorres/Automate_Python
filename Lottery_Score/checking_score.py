@@ -2,9 +2,9 @@ import web_scraper, games_image
 print('Checking Score.')
 print()
 
-# This function checks the total score hit in each lottery ticket.
 def score(your_games, round=False):
     
+    # This function checks the total score hit in each lottery ticket.
     lottery_result = web_scraper.extract_search(round)
     if type(lottery_result) == str:
         return lottery_result
@@ -28,9 +28,9 @@ print(score([[],
            [],
            []]))
 
-# This function checks the score automatically.
 def auto_checking():
 
+    # This function checks the score automatically.
     return score(*games_image.get_numbers())
 
 #print(score(*games_image.get_numbers()))  # Don't forget to change the games.png
