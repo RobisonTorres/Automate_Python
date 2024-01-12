@@ -17,7 +17,7 @@ To address this, I implemented alternative options:
 
  - ```checking_score.py``` - This function checks the total score hit in each lottery ticket.
  - ```games_image.py``` - This function retrieves numbers from image and processes them to form lottery games. 
- - ```web_scraper.py``` - This function accesses the lottery's site and retrieve the result.
+ - ```web_scraper.py``` - This function accesses the lottery's site and retrieve the result based on the round choose by the user.
  
 ## Prerequisites
 
@@ -46,7 +46,7 @@ To use this repository, follow these steps:
 
 4. Choose a function:
 
-    * To check the your score:
+    * To check the score:
     ```bash
    python checking_score.py
     ```
