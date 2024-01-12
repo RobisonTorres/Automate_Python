@@ -33,4 +33,4 @@ def auto_checking():
     # This function checks the score automatically.
     return score(*games_image.get_numbers())
 
-print(score(*games_image.get_numbers()))  # Don't forget to change the games.png
+#print(score(*games_image.get_numbers()))  # Don't forget to change the games.png
