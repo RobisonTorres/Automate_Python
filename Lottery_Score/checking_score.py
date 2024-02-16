@@ -28,9 +28,9 @@ print(score([[],
            [],
            []]))
 
-def auto_checking():
+def auto_checking(file):
 
     # This function checks the score automatically.
-    return score(*games_image.get_numbers())
+    return score(*games_image.get_numbers(file))
 
-#print(score(*games_image.get_numbers()))  # Don't forget to change the games.png
+print(auto_checking(f'games.png'))  # Don't forget to change the file.png

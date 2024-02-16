@@ -2,11 +2,11 @@ import sys, re
 sys.path.append(r'C:\Users\rcssi\Code\Automate_Python\Image_Reader')
 import reader_numbers
 
-def get_numbers():
+def get_numbers(file):
 
     # This function retrieves numbers from image and processes them to form lottery games. 
     your_games = []   
-    numbers_retrieved = reader_numbers.read_nums(f'games.png')
+    numbers_retrieved = reader_numbers.read_nums(file)
     games_retrieved =  re.sub(r'(#\d)|(\@\d+)', ' ', numbers_retrieved).split()
     round_retrieved = re.sub(r'(#\d+)|(\@)', '', numbers_retrieved)
    
@@ -24,7 +24,7 @@ def get_numbers():
 def show_games():
 
     # This function shows the games retrieved from the image.
-    image_result = get_numbers()
+    image_result = get_numbers(f'games.png')
     your_games = image_result[0]
     show = []
 
