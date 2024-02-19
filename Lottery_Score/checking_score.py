@@ -1,6 +1,5 @@
 import web_scraper, games_image
-print('Checking Score.')
-print()
+print('Checking Score.\n')
 
 def score(your_games, round=False):
     
@@ -28,9 +27,4 @@ print(score([[],
            [],
            []]))
 
-def auto_checking(file):
-
-    # This function checks the score automatically.
-    return score(*games_image.get_numbers(file))
-
-print(auto_checking(f'games.png'))  # Don't forget to change the file.png
+print(score(*games_image.get_numbers(f'games.png')))  # Don't forget to change the file.png
