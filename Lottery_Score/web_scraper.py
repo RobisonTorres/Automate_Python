@@ -1,5 +1,6 @@
 import requests, bs4, re
 
+# Not working.
 def web_search(round):
 
     # This function accesses the lottery's page and takes the html.

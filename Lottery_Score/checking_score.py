@@ -1,6 +1,7 @@
 import web_scraper, games_image
 print('Checking Score.\n')
 
+# Not working.
 def score(your_games, round=False):
     
     # This function checks the total score hit in each lottery ticket.
