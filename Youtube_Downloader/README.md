@@ -34,15 +34,11 @@ To use this repository, follow these steps:
    ```bash
    cd Automate_Python/Youtube_Downloader
 
-4. Choose a function:
+4. Choose a option:
 
-    * To download videos or playlist:
+    * To download video or audio execute the main.py:
     ```bash
-   python youtube_downloader.py
-    ```
-    * To download only the audio:
-    ```bash
-   python youtube_audio.py
+   python main.py
 
 5. Follow the instructions prompted into your screen to download.
 
