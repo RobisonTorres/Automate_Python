@@ -40,9 +40,9 @@ def repeat():
         option = input('\nPress "y" to continue downloading: ').lower()
         if option != 'y':
             break  
-        download()
+        download_main_audio()
 
-def download():
+def download_main_audio():
 
     # This function downloads audios or playlists from youtube based on user's input.
     directory = directory_path()
@@ -55,5 +55,3 @@ def download():
         print('Wrong option.')
     repeat()
     return 'Operation finished.'
-
-print(download())
