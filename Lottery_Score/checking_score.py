@@ -15,7 +15,6 @@ def takeGame():
         choseNumbers.append(new_game) 
     return choseNumbers
 
-# Not working.
 def score(your_games, round=False):
     
     # This function checks the total score hit in each lottery ticket.
