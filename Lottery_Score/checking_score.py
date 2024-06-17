@@ -37,4 +37,4 @@ def score(your_games, round=False):
         return '\n'.join(score_result)
 
 print(score(takeGame()))
-print(score(*games_image.get_numbers(f'games.png')))  # Don't forget to change the file.png
+#print(score(*games_image.get_numbers(f'games.png')))  # Don't forget to change the file.png

@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import re
+import re, time
 
 def web_search(round):
 
@@ -14,9 +14,7 @@ def web_search(round):
     click_button = driver.find_element(By.XPATH, "//*[contains(text(), 'PESQUISAR')]").click()
     result = driver.find_element(By.CLASS_NAME, "table-responsive").text
 
-    # Close the browser.
-    driver.close()
-    
+    time.sleep(5)
     return result
 
 def extract_search(round=False):
@@ -28,9 +26,11 @@ def extract_search(round=False):
     # Perform the web search.
     lottery_numbers = web_search(round)
 
-    # Convert the formatted string into a list of integers (each representing a lottery number)
-    lottery_numbers = re.findall(r'(\d{2}(?:-\d{2}){14})', lottery_numbers)   
-    lottery_numbers = re.sub('[^0-9]', '', lottery_numbers[0])
-    lottery_result = [int(lottery_numbers[x:x+2]) for x in range(0, len(lottery_numbers), 2)]
-    
-    return [lottery_result, round]
+    if lottery_numbers == '':
+        return f'Round: {round} - Result not found.'
+    else:
+        # Convert the formatted string into a list of integers.
+        lottery_numbers = re.findall(r'(\d{2}(?:-\d{2}){14})', lottery_numbers)   
+        lottery_numbers = re.sub('[^0-9]', '', lottery_numbers[0])
+        lottery_result = [int(lottery_numbers[x:x+2]) for x in range(0, len(lottery_numbers), 2)]
+        return [lottery_result, round]
