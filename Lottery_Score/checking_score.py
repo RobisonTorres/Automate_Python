@@ -2,7 +2,8 @@ import web_scraper, games_image
 print('Checking Score.\n')
 
 def takeGame():
-
+    
+    # This function asks user to enter the lottery games.
     nums = input("Enter the Lottery games separated by commas, each with 15 numbers: ").strip().split(',')
     your_games = [list(map(int, game)) for game in nums]
     choseNumbers = []   
