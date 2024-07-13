@@ -44,7 +44,7 @@ To use this repository, follow these steps:
 
 ## Note
 
-For first time you run this program the terminal will display a code. Copy and paste this code into your browser to log in to your personal account on Youtube. 
+For the first time you run this program the terminal will display a code. Copy and paste this code into your browser to log in to your personal account on Youtube. 
 
 ## Issue
 
