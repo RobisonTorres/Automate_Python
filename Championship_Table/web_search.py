@@ -2,7 +2,7 @@ import requests, bs4
 
 def web_search():
 
-    # This function accesses the page and takes the html - shoots and defenses. 
+    # This function accesses the page and takes the html. 
     url = 'https://fbref.com/pt/comps/24/Serie-A-Estatisticas'
     source = requests.get(url).text
     soup = bs4.BeautifulSoup(source, 'html.parser')
