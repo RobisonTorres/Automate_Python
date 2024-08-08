@@ -8,7 +8,7 @@ def create_file_csv():
     try:
         with open('championship_table.csv', 'w', newline='') as file:
             writer = csv.writer(file)
-            field = ['Club', 'Pts', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Shoots on Target', 'Won Defenses']
+            field = ['Club', 'Pts', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Shoots on Target', 'Won Defenses', 'P. - Pts']
             writer.writerow(field)
             soup = web_search()
             result_dict = extract_search_championship_table(soup)
@@ -16,7 +16,8 @@ def create_file_csv():
             shoots, defenses = extract_search_shoot_defense(soup)
 
             for x in range(0, 20):
-                writer.writerow([teams[x], scores[x][7], scores[x][0], scores[x][1], scores[x][2], scores[x][3], scores[x][4], scores[x][5], scores[x][6], shoots[x], defenses[x]])
+                projection_pts = int(scores[x][7])/(int(scores[x][0]) * 3) * (38 - int(scores[x][0])) * 3 + int(scores[x][7])
+                writer.writerow([teams[x], scores[x][7], scores[x][0], scores[x][1], scores[x][2], scores[x][3], scores[x][4], scores[x][5], scores[x][6], shoots[x], defenses[x], int(projection_pts)])
     except:
         return 'Something went wrong. Try again.'
 
@@ -36,8 +37,6 @@ def create_file_excel():
         column_settings.append({'header': header})  
     worksheet.add_table(0, 0, max_row, max_col - 1, {'columns': column_settings})
     worksheet.set_column(0, max_col - 1, 12)
-    percent_format = workbook.add_format({"num_format": "0%"})
-    worksheet.set_column(11, 12, None, percent_format)
     writer.close()
     return 'File created with success.'
  
